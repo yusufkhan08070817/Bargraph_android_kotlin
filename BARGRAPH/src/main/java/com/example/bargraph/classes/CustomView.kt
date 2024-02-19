@@ -62,7 +62,7 @@ class CustomView : View {
         val radius = rectangleHeight / 2
 
         // Set the color
-        rectanglePaint.color = Color.RED
+        rectanglePaint.color = rectangleColor
 
         // Draw the rounded rectangle
         canvas.drawRoundRect(rect, radius, radius, rectanglePaint)
