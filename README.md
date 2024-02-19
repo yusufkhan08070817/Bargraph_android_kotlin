@@ -1,4 +1,4 @@
-
+![Alt text](https://atlas-content-cdn.pixelsquid.com/stock-images/bar-graph-y1KAkP1-600.jpg)
 
 ```
 dependencyResolutionManagement {
