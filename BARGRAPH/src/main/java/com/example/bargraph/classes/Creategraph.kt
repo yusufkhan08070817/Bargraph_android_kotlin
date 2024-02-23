@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bargraph.R
 
-class Creategraph(val context: Context, view: ViewGroup,data: IntArray, width: Float = 10f, color: Int,Graph_background:Boolean) {
+class Creategraph(val context: Context, view: ViewGroup,data: ArrayList<graphdata>, width: Float = 10f, color: Int,Graph_background:Boolean,alternativecolor:Boolean,color2:Int) {
     private val relativeLayout = RelativeLayout(context)
     private val recyclerView = RecyclerView(context)
     private val imageView = ImageView(context)
@@ -52,7 +52,7 @@ class Creategraph(val context: Context, view: ViewGroup,data: IntArray, width: F
 
         view.addView(relativeLayout)
         recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-        recyclerView.adapter = GraphAdopter(data, color, width)
+        recyclerView.adapter = GraphAdopter(data, color, width,alternativecolor,color2)
         imageView.visibility= if (Graph_background)View.VISIBLE else View.GONE
 
     }

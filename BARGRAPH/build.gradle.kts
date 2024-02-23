@@ -49,7 +49,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.yusufkhan08070817"
                 artifactId = "Bargraph_android_kotlin"
-                version = "1.0.2"
+                version = "1.0.3"
             }
         }
     }

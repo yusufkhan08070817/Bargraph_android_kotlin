@@ -5,7 +5,16 @@
    <com.example.bargraph.classes.CustomView
        android:layout_width="20dp"
        android:layout_margin="10dp"
+       android:layout_above="@+id/textbar"
        android:layout_height="match_parent"
        android:id="@+id/bar"/>
-
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+android:text="hii"
+      android:rotation="0"
+       android:layout_alignParentBottom="true"
+       android:id="@+id/textbar"
+       android:layout_margin="2dp"
+     />
 </RelativeLayout>
